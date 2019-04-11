@@ -74,8 +74,8 @@
     <LibraryPath>D:\DevLibs\2017\boost\builds\boost_1_65_1\lib64-msvc-14.1;D:\DevLibs\2017\OpenCV\Builds\VS2017CONT\install\x64\vc15\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\DevLibs\2017\OpenCV\Builds\VS2017CONT\install\include;D:\DevLibs\2017\boost\builds\boost_1_65_1;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\DevLibs\2017\boost\builds\boost_1_65_1\lib64-msvc-14.1;D:\DevLibs\2017\OpenCV\Builds\VS2017CONT\install\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\development\2019\opencv\build\include;D:\development\2019\boost_1_69_0;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\development\2019\boost_1_69_0\lib64-msvc-14.1;D:\development\2019\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,7 +96,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opencv_core330d.lib;opencv_highgui330d.lib;opencv_imgcodecs330d.lib;opencv_imgproc330d.lib;opencv_features2d330d.lib;opencv_tracking330d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
